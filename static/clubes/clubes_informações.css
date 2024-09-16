@@ -1,0 +1,4 @@
+strong{
+	--value:rgb(255, 255, 255);
+background-color: var(--value);
+transition: background-color 0.2s;}

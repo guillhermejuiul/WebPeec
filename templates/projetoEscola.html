@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro</title>
+	<link rel="stylesheet" type="text/css" href="/static/projetoEscola.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+        <div class="container">
+            <h1 class="header-title">Cadastro</h1>
+            {% if mensagem_erro_senhas %}
+            <strong id="me">{{ mensagem_erro_senhas }}</strong>
+            {% endif %}
+            {% if mensagem_erro_email %}
+            <strong id="me">{{ mensagem_erro_email }}</strong>
+            {% endif %}
+            <form action="/cadastro" method="post">
+                <input type="text" name="usuario" placeholder="Usuário" required="">
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="password" name="password1" placeholder="Senha" required="">
+                <input type="password" name="password2" placeholder="Confirmar senha" required="">
+                <a href="/esqueceuAsenha" id="botaosenha">Redefinir Senha</a>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+
+			<div class="login">
+				<form action="/login" method="post">
+					<label class="header-title" for="chk" for="username" aria-hidden="true">Login</label>
+                    {% if mensagem_erro %}
+                    <strong id="me">{{ mensagem_erro }}</strong>
+                    {% endif %}
+					<input type="text" name="usuario" placeholder="Usuário" required="">
+					<input type="password" for="password" name="senha" placeholder="Senha" required="">
+					<button>Login</button>
+				</form>
+			</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='components/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='components/botao.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='clubes/clubes_informações.css') }}">
+    <title>Informações do Clube</title>
+</head>
+<body>
+    {% include "components/base.html" %}
+    <h1>Informações do Clube</h1>
+    {% if clube %}
+    <p><strong>Nome do Clube:</strong> {{ clube['nome_clube'] }}</p>
+    <p><strong>Líder:</strong> {{ clube['lider'] }}</p>
+    <p><strong>Vice-Líder:</strong> {{ clube['vice_lider'] }}</p>
+    <p><strong>Contato:</strong> {{ clube['contato'] }}</p>
+    {% else %}
+    <p>Clube não encontrado.</p>
+    {% endif %}
+    <script>
+        let button = document.getElementById("theme-toggle");
+        let isDark = false;
+
+        button.onclick = () => {
+            isDark = !isDark;
+            document.body.style.setProperty("--bg-color", isDark ? "black" : "white");
+            document.body.style.setProperty("--text-color", isDark ? "white" : "black");
+            document.body.style.backgroundColor = isDark ? "black" : "white";
+            document.body.style.color = isDark ? "white" : "black";
+        };
+    </script>
+</body>
+</html>

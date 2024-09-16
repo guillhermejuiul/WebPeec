@@ -1,0 +1,44 @@
+[
+    {
+        "nome_clube": "arduino",
+        "lider": "bryan",
+        "vice_lider": "maylson",
+        "contato": "khkh@gmail.com"
+    },
+    {
+        "nome_clube": "peaa",
+        "lider": "liz",
+        "vice_lider": "neto",
+        "contato": "khk@gmail.com"
+    },
+    {
+        "nome_clube": "clube de xadrez",
+        "lider": "thais",
+        "vice_lider": "sofia",
+        "contato": "thaisgamer@gmail.com"
+    },
+    {
+        "nome_clube": "clube de esporte",
+        "lider": "ellen",
+        "vice_lider": "alanna",
+        "contato": "alanna@gmail.com"
+    },
+    {
+        "nome_clube": "clube de jogos",
+        "lider": "darlan",
+        "vice_lider": "davi",
+        "contato": "davi@gmail.com"
+    },
+    {
+        "nome_clube": "clube de juliene",
+        "lider": "juliene",
+        "vice_lider": "guilherme",
+        "contato": "guigodzilla01@gmail.com"
+    },
+    {
+        "nome_clube": "clube de artes",
+        "lider": "amand",
+        "vice_lider": "juiene",
+        "contato": "julien@gmail.com"
+    }
+]

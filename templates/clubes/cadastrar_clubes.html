@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/clubes/cadastrar_clubes.css">
+    <title>Tela de cadastro Clubes</title>
+</head>
+<body>
+    <div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+        <div class="container">
+            <h1 class="header-title">Cadastro de clube</h1>
+            <form action="/cadastro_clube" method="post">
+                <input type="text" name="usuario" placeholder="Qual o nome do clube?" required="">
+                <input type="text" name="lider" placeholder="Nome do líder" required="">
+                <input type="text" name="vice_lider" placeholder="Vice líder" required="">
+                <input type="email" name="contato" placeholder="Contato(Email ou número)" required="">
+                <button type="submit"><a href="/clubesinformações">Cadastrar clube</a></button>
+                <img src="static/undraw_choose_card_n0x0.png" width="200" alt="">
+            </form>
+        </div>
+    </div>
+
+    
+</body>
+</html>

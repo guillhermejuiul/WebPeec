@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/clubes/tela_clubes.css">
+    <title>Tela de Clubes</title>
+</head>
+<body>
+    <div class="container">
+        {% include "components/base.html" %}
+        <div id="sidebarMenu">
+            <ul class="sidebarMenuInner">
+                <li><a href="/telaInicial">Início</a></li>
+                <li><a href="/telacadastroclubes">Cadastrar Clube</a></li>
+                <li><a href="/">Sair da Conta</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="image-container">
+        {% for clube in clubes %}
+        <a href="{{ url_for('informaçõesdoclube', nome_clube=clube['nome_clube']) }}" class="item">
+            <img src="https://via.placeholder.com/200x200" alt="Descrição da Imagem">
+            <p>Entre no clube</p>
+        </a>
+        {% endfor %}
+    </div>
+</body>
+</html>

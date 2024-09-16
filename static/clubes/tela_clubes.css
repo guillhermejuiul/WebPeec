@@ -1,0 +1,61 @@
+.image-container {
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap: 20px; /* Espaçamento entre as colunas e linhas */
+}
+
+.image-container .item {
+    flex: 1 1 calc(25% - 20px); /* Ajuste o percentual para o número de colunas desejado */
+    box-sizing: border-box; /* Inclui o padding e border no cálculo da largura */
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+.image-container a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.image-container p {
+    position: relative;
+    left: 20%;
+}
+
+.image-caption {
+    margin-top: 8px;
+    font-size: 7px;
+    color: #555;
+}
+
+.image-caption a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.image-caption a:hover {
+    text-decoration: underline;
+}
+
+.item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #00000033;
+    box-shadow: 0 4px 8px rgba(255, 252, 252, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-p {
+    text-decoration: none;
+}

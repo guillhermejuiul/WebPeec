@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Redefinir senha</title>
+	<link rel="stylesheet" type="text/css" href="/static/esqueceuAsenha.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+        <div class="container">
+            <label>Redefinir <br>
+                Senha</label>
+            <form action="/cadastro" method="post">
+                <input type="password" name="usuario" placeholder="redefinir senha" required="">
+                <input type="password" name="email" placeholder="confirmar senha" required="">
+                <button type="submit">redefinir senha</button>
+            </form>
+        </div>
+
+			<div class="botaovoltar">
+				<label><a href="/">voltar</a></label>
+			</div>
+	</div>
+</body>
+</html>
