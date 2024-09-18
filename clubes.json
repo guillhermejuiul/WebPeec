@@ -36,9 +36,27 @@
         "contato": "guigodzilla01@gmail.com"
     },
     {
-        "nome_clube": "clube de artes",
-        "lider": "amand",
-        "vice_lider": "juiene",
-        "contato": "julien@gmail.com"
+        "nome_clube": "clube de politica",
+        "lider": "datena",
+        "vice_lider": "mar\u00e7al",
+        "contato": "marcal@gmail.com"
+    },
+    {
+        "nome_clube": "clube de davi melow",
+        "lider": "davi",
+        "vice_lider": "melow",
+        "contato": "melow@gmail.com"
+    },
+    {
+        "nome_clube": "clube de astronomia",
+        "lider": "armadilha",
+        "vice_lider": "jackson",
+        "contato": "armadilha@gmail.com"
+    },
+    {
+        "nome_clube": "clube de luta",
+        "lider": "rocky",
+        "vice_lider": "balboa",
+        "contato": "balboa@gmail.com"
     }
 ]

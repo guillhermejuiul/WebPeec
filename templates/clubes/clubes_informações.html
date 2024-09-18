@@ -12,10 +12,12 @@
     {% include "components/base.html" %}
     <h1>Informações do Clube</h1>
     {% if clube %}
-    <p><strong>Nome do Clube:</strong> {{ clube['nome_clube'] }}</p>
-    <p><strong>Líder:</strong> {{ clube['lider'] }}</p>
-    <p><strong>Vice-Líder:</strong> {{ clube['vice_lider'] }}</p>
-    <p><strong>Contato:</strong> {{ clube['contato'] }}</p>
+    <div class="item">
+        <p><strong>Nome do Clube:</strong> {{ clube['nome_clube'] }}</p>
+        <p><strong>Líder:</strong> {{ clube['lider'] }}</p>
+        <p><strong>Vice-Líder:</strong> {{ clube['vice_lider'] }}</p>
+        <p><strong>Contato:</strong> {{ clube['contato'] }}</p>
+    </div>
     {% else %}
     <p>Clube não encontrado.</p>
     {% endif %}

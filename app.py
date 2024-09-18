@@ -62,7 +62,7 @@ def telacadastroclubes():
 def teladeinformacoes():
     return render_template("clubes/clubes_informações.html")
 
-@app.route("/clubesinformações/<nome_clube>")
+@app.route("/teladeinformações/<nome_clube>")
 def informaçõesdoclube(nome_clube):
     clubes = get_clubes()
     clube = next((c for c in clubes if c['nome_clube'] == nome_clube), None)
