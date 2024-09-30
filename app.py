@@ -9,7 +9,7 @@ app.config["SECRET_KEY"] = "chave secreta"
 def projetoEscola():
     return render_template("projetoEscola.html")
 
-@app.route('/login', methods=['POST'])
+@app.route('/login', methods=['POST'])  
 def login():
     usuario = request.form.get("usuario")
     senha = request.form.get("senha")
