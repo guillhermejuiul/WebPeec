@@ -35,11 +35,6 @@
         "senha": "abcd"
     },
     {
-        "usuario": "ednaldao",
-        "email": "ednaldao@gmail.com",
-        "senha": "abcd"
-    },
-    {
         "usuario": "guirfk",
         "email": "guirfk@gmail.com",
         "senha": "guirfk"
@@ -85,13 +80,18 @@
         "senha": "123"
     },
     {
-        "usuario": "sexo",
-        "email": "sexo@gmai.com",
-        "senha": "1234"
-    },
-    {
         "usuario": "srgdfg",
         "email": null,
         "senha": null
+    },
+    {
+        "usuario": "nyckson",
+        "email": "nyckson@gmail.com",
+        "senha": "nyck"
+    },
+    {
+        "usuario": "ednaldo",
+        "email": "ednaldo@gmail.com",
+        "senha": "ruim"
     }
 ]

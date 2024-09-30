@@ -63,11 +63,11 @@ def teladeinformacoes():
     return render_template("clubes/clubes_informações.html")
 
 @app.route("/teladeinformações/<nome_clube>")
-def informaçõesdoclube(nome_clube):
+def informacoesdoclube(nome_clube):
     clubes = get_clubes()
     clube = next((c for c in clubes if c['nome_clube'] == nome_clube), None)
     if clube:
-        return render_template("clubes/clubes_informações.html", clube=clube)
+        return render_template("clubes/clubes_informacoes.html", clube=clube)
     return "Clube não encontrado", 404
 
 
@@ -77,11 +77,14 @@ def cadastro_clube():
     lider = request.form.get('lider')
     vice_lider = request.form.get('vice_lider')
     contato = request.form.get('contato')
+    descricao = request.form.get('descricao')  # Novo campo de descrição
     
-    if add_clube(nome_clube, lider, vice_lider, contato):
+    # Adicione o novo campo 'descricao' ao método `add_clube`
+    if add_clube(nome_clube, lider, vice_lider, contato, descricao):
         return redirect(url_for("telaClubes"))
     else:
         return render_template("clubes/cadastrar_clubes.html", mensagem_erro_clube="Clube já cadastrado")
+
 
 if __name__ == "__main__":
     app.run(debug=True)

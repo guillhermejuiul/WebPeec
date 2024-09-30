@@ -18,6 +18,9 @@
         <p><strong>Vice-Líder:</strong> {{ clube['vice_lider'] }}</p>
         <p><strong>Contato:</strong> {{ clube['contato'] }}</p>
     </div>
+    <div class="descricao">
+        <p>{{ clube['descricao'] | replace('\n', '<br>') | safe }}</p>
+    </div>
     {% else %}
     <p>Clube não encontrado.</p>
     {% endif %}
