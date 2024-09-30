@@ -19,7 +19,7 @@
     </div>
     <div class="image-container">
         {% for clube in clubes %}
-        <a href="{{ url_for('informaçõesdoclube', nome_clube=clube['nome_clube']) }}" class="item">
+        <a href="{{ url_for('informacoesdoclube', nome_clube=clube['nome_clube']) }}" class="item">
             <img src="https://via.placeholder.com/200x200" alt="Descrição da Imagem">
             <p>Visualizar página do clube</p>
         </a>
