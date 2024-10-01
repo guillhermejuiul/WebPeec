@@ -20,10 +20,10 @@
     <div class="image-container">
         {% for clube in clubes %}
         <a href="{{ url_for('informacoesdoclube', nome_clube=clube['nome_clube']) }}" class="item">
-            <img src="https://via.placeholder.com/200x200" alt="Descrição da Imagem">
+            <img src="{{ url_for('static', filename='uploads/clubes/' ~ clube['foto']) }}" alt="{{ clube['nome_clube'] }}" width="200" height="200">
             <p>Visualizar página do clube</p>
         </a>
         {% endfor %}
-    </div>
+    </div>    
 </body>
 </html>
