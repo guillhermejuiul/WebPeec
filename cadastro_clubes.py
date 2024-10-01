@@ -1,7 +1,6 @@
 import json
 import os
 
-# Nome do arquivo JSON usado para armazenar os clubes
 CLUBES_FILE = 'clubes.json'
 
 def load_clubes():
@@ -16,7 +15,7 @@ def save_clubes(clubes):
     with open(CLUBES_FILE, 'w') as file:
         json.dump(clubes, file, indent=4)
 
-def add_clube(nome_clube, lider, vice_lider, contato, descricao):
+def add_clube(nome_clube, lider, vice_lider, contato, descricao, foto_filename):
     clubes = load_clubes()
 
     # Verifica se já existe um clube com o mesmo nome
@@ -24,18 +23,19 @@ def add_clube(nome_clube, lider, vice_lider, contato, descricao):
         if clube['nome_clube'] == nome_clube:
             return False
 
-    # Adiciona o novo clube com todas as informações, incluindo a descrição
+
     clubes.append({
         'nome_clube': nome_clube,
         'lider': lider,
         'vice_lider': vice_lider,
         'contato': contato,
-        'descricao': descricao  # Novo campo de descrição do clube
+        'descricao': descricao,
+        'foto': foto_filename  
     })
 
-    # Salva a lista atualizada de clubes no arquivo JSON
     save_clubes(clubes)
     return True
+
 
 def get_clubes():
     """Retorna a lista de clubes carregada do arquivo JSON."""

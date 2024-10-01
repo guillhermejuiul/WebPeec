@@ -11,7 +11,7 @@
 		<input type="checkbox" id="chk" aria-hidden="true">
         <div class="container">
             <h1 class="header-title">Cadastro de clube</h1>
-            <form action="/cadastro_clube" method="post">
+            <form action="/cadastro_clube" method="post" enctype="multipart/form-data">
                 {% if mensagem_erro_clube %}
                     <strong id="me">{{ mensagem_erro_clube }}</strong>
                 {% endif %}
@@ -20,9 +20,11 @@
                 <input type="text" name="vice_lider" placeholder="Vice líder" required="">
                 <input type="email" name="contato" placeholder="Contato (Email ou número)" required="">
                 <textarea name="descricao" placeholder="Descrição do clube" required=""></textarea>
+                <input type="file" name="foto_clube" placeholder="Foto do clube" accept="image/*" required="">
                 <button type="submit"><a>Cadastrar clube</a></button>
                 <img src="static/undraw_choose_card_n0x0.png" width="180" alt="">
             </form>
+            
         </div>
     </div>
 </body>
