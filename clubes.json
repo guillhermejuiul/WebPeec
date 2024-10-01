@@ -1,1 +1,10 @@
-[]
+[
+    {
+        "nome_clube": "Alquimia",
+        "lider": "inak\u00e3",
+        "vice_lider": "nycksinho",
+        "contato": "inaka@gmail.com",
+        "descricao": "Bem-vindos ao Clube de Alquimia, um espa\u00e7o dedicado \u00e0 explora\u00e7\u00e3o e \u00e0 pr\u00e1tica da alquimia em suas diversas formas! Aqui, acreditamos que a alquimia vai al\u00e9m da simples transforma\u00e7\u00e3o de metais; ela \u00e9 um s\u00edmbolo de autotransforma\u00e7\u00e3o, descoberta e conex\u00e3o com o universo.\r\n\r\nO que fazemos?\r\n\r\nNo nosso clube, promovemos encontros regulares onde exploramos os fundamentos da alquimia, desde suas ra\u00edzes hist\u00f3ricas at\u00e9 suas aplica\u00e7\u00f5es modernas. Nossos membros t\u00eam a oportunidade de:\r\n\r\nParticipar de workshops pr\u00e1ticos, onde aprenderemos a criar misturas e elixires inspirados nas tradi\u00e7\u00f5es alqu\u00edmicas.\r\nDebater textos cl\u00e1ssicos e contempor\u00e2neos sobre alquimia e filosofia, ampliando nossa compreens\u00e3o e vis\u00e3o de mundo.\r\nCompartilhar experi\u00eancias pessoais e insights sobre o processo de transforma\u00e7\u00e3o em nossas vidas.\r\nPor que se juntar a n\u00f3s?\r\n\r\nSe voc\u00ea \u00e9 curioso sobre o mundo da alquimia, se deseja se conectar com pessoas que compartilham interesses semelhantes ou simplesmente se voc\u00ea quer explorar novas formas de express\u00e3o e autodescoberta, o Clube de Alquimia \u00e9 o lugar ideal para voc\u00ea!\r\n\r\nPr\u00f3ximo Encontro:\r\n\r\nNosso pr\u00f3ximo encontro ser\u00e1 no dia [data], \u00e0s [hor\u00e1rio], na [localiza\u00e7\u00e3o]. Prepare-se para uma jornada fascinante atrav\u00e9s do conhecimento e da transforma\u00e7\u00e3o!\r\n\r\nVenha fazer parte dessa busca pelo ouro interior! ",
+        "foto": "quimica.jpg"
+    }
+]
