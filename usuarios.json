@@ -93,5 +93,15 @@
         "usuario": "ednaldo",
         "email": "ednaldo@gmail.com",
         "senha": "ruim"
+    },
+    {
+        "usuario": "ednaldolindo",
+        "email": "ednaldolindo@gmail.com",
+        "senha": "123456"
+    },
+    {
+        "usuario": "raimundjio",
+        "email": "raimundjio@gmail.com",
+        "senha": "rai123"
     }
 ]
