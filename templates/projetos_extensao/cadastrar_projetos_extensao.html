@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/projetos_extensao/cadastrar_projetos_extensao.css">
+    <title>Tela de Cadastrar Projeto de Extensão</title>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <h1 class="header-title">Cadastro de Projeto</h1>
+            <form action="/cadastro_projeto" method="post" enctype="multipart/form-data">
+                {% if mensagem_erro_clube %}
+                    <strong id="me">{{ mensagem_erro_clube }}</strong>
+                {% endif %}
+                <input type="text" name="nome_projeto" placeholder="Qual o nome do Projeto?">
+                <input type="text" name="lider" placeholder="Nome do Líder">
+                <input type="text" name="coordenador" placeholder="Nome do coordenador">
+                <input type="email" name="contato" placeholder="Contato (Email ou número)">
+                <textarea name="descricao" placeholder="Descrição do projeto"></textarea>
+                <input type="file" name="foto_projeto" placeholder="Foto do projeto" accept="image/*">
+                <button type="submit"><a>Cadastrar projeto</a></button>
+                <img src="static/undraw_choose_card_n0x0.png" width="180" alt="">
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

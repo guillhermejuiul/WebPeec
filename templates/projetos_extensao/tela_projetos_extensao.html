@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='clubes/tela_clubes.css') }}">
+    <title>Tela de Projetos de Extensão</title>
+</head>
+<body>
+    <div class="container">
+        {% include "components/base.html" %}
+        <div id="sidebarMenu">
+            <ul class="sidebarMenuInner">
+                <li><a href="/telaInicial">Início</a></li>
+                <li><a href="/telacadastroprojetosextensao">Cadastrar Projeto de Extensão</a></li>
+                <li><a href="/">Sair da Conta</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="image-container">
+        {% for projeto in projetos %}
+        <div class="item">
+            {% if 'nome_projeto' in projeto and projeto['nome_projeto'] %}
+            <a href="{{ url_for('informacoesdoprojeto', nome_projeto=projeto['nome_projeto']) }}" class="item">
+                <img src="{{ url_for('static', filename='uploads/projetos/' ~ projeto['foto']) }}" alt="{{ projeto['nome_projeto'] }}" width="200" height="200">
+                <p>{{ projeto['nome_projeto'] }}</p> <!-- Nome do projeto mostrado aqui -->
+            </a>
+            {% else %}
+            <p>Nome do projeto não encontrado.</p>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

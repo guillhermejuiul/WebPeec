@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/clubes/tela_clubes.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='clubes/tela_clubes.css') }}">
     <title>Tela de Clubes</title>
 </head>
 <body>
@@ -19,10 +19,12 @@
     </div>
     <div class="image-container">
         {% for clube in clubes %}
-        <a href="{{ url_for('informacoesdoclube', nome_clube=clube['nome_clube']) }}" class="item">
-            <img src="{{ url_for('static', filename='uploads/clubes/' ~ clube['foto']) }}" alt="{{ clube['nome_clube'] }}" width="200" height="200">
-            <p>Visualizar página do clube</p>
-        </a>
+        <div class="item">
+            <a href="{{ url_for('informacoesdoclube', nome_clube=clube['nome_clube']) }}" class="item">
+                <img src="{{ url_for('static', filename='uploads/clubes/' ~ clube['foto']) }}" alt="{{ clube['nome_clube'] }}" width="200" height="200">
+                <p>{{ clube['nome_clube'] }}</p> <!-- Nome do clube mostrado aqui -->
+            </a>
+        </div>
         {% endfor %}
     </div>    
 </body>
