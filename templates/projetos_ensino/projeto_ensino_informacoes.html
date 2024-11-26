@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='components/base.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='components/botao.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='projetos_extensao/projetos_extensao_informacoes.css') }}">
-    <title>Informações do Projeto</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='components/base.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='components/botao.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='projetos_extensao/projetos_extensao_informacoes.css')}}">
+    <title>informações do projeto de ensino</title>
 </head>
 <body>
     {% include "components/base.html" %}
-    <h1>Informações do Projeto</h1>
-    {% if projeto %}
+    <h1>Informações Do Projeto de Ensino</h1>
+    {% if ensino %}
     <div class="item">
-        <p><strong>Nome do Projeto:</strong> {{ projeto['nome_projeto'] }}</p>
-        <p><strong>Líder:</strong> {{ projeto['lider'] }}</p>
-        <p><strong>Coordenador:</strong> {{ projeto['coordenador'] }}</p>
-        <p><strong>Contato:</strong> {{ projeto['contato'] }}</p>
+        <p><strong>Nome do Projeto de Ensino:</strong> {{ ensino['nome_ensino']  }}</p>
+        <p><strong>Líder:</strong> {{ ensino['lider'] }}</p>
+        <p><strong>Vice líder:</strong> {{ ensino['vice_lider'] }}</p>
+        <p><strong>Contato:</strong> {{ ensino['contato'] }}</p>
     </div>
     <div class="descricao">
-        <p>{{ projeto['descricao'] | replace('\n', '<br>') | safe }}</p>
+        <p>{{ ensino['descricao'] | replace('\n', '<br>') | safe }}</p>
     </div>
     {% else %}
     <p>Projeto não encontrado.</p>
@@ -36,5 +36,6 @@
             document.body.style.color = isDark ? "white" : "black";
         };
     </script>
+    
 </body>
 </html>

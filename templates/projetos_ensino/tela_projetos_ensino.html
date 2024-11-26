@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='clubes/tela_clubes.css') }}">
+    <title>Tela de Projetos de Ensino</title>
+</head>
+<body>
+    <div class="container">
+        {% include "components/base.html" %}
+        <div id="sidebarMenu">
+            <ul class="sidebarMenuInner">
+                <li><a href="/telaInicial">Início</a></li>
+                <li><a href="/telacadastroprojetosensino">Cadastrar Projeto de Ensino</a></li>
+                <li><a href="/">Sair da Conta</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="image-container">
+        {% for ensino in ensino %} <!-- Certifique-se de usar a variável correta -->
+        <div class="item">
+            {% if 'nome_ensino' in ensino and ensino['nome_ensino'] %}
+            <a href="{{ url_for('informacoesdoensino', nome_ensino=ensino['nome_ensino']) }}" class="item">
+                <img src="{{ url_for('static', filename='uploads/ensino/' ~ ensino['foto']) }}" alt="{{ ensino['nome_ensino'] }}" width="200" height="200">
+                <p>{{ ensino['nome_ensino'] }}</p> <!-- Nome do ensino mostrado aqui -->
+            </a>
+            {% else %}
+            <p>Nome do projeto de ensino não encontrado.</p>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
