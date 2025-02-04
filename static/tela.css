@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+.W img{
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: 150px;
+    left: 33px;
+}
+.W h1{
+    font-family: Figtree;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    top: 150px;
+    left: 10px;
+    font-size: 30px;
+}
+.W p{
+    font-family: Figtree;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    top: 150px;
+    left: 10px;
+    font-size: 15px;
+}
+.U img{
+  position: relative;
+  display: flex;
+  align-items: center;
+  top: 50px;
+  left: 8px;
+}
+.U h1{
+  font-family: Figtree;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    top: 50px;
+    left: 40px;
+    font-size: 30px;
+}
+.container2 {
+    position: relative;
+    top: -14%;
+    left: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container2 img{
+    max-width: 240px;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+.container2 .glass {
+    width: 270px;
+    height: 320px;
+    background: white;
+    border: 1px solid #00000033;
+    box-shadow: 45px 45px 45px  rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 10px;
+    margin: 0 -45px;
+    backdrop-filter: blur(10px);
+    transform: rotate(calc(var(--r) * 1deg));
+}
+.container2:hover .glass {
+    transform: rotate(0deg);
+    margin: 0 10px;
+}
+.container2 .glass::before {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.container2 img {
+    position: relative;
+    top: -10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap: 20px;
+    width: 100%;
+}
+.item {
+    background-color: white;
+    border-radius: 30px;
+    border: 1px solid #00000033;
+    box-shadow: 0 4px 8px rgba(255, 252, 252, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container2 a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.card {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    left: 45%;
+    top: -300px;
+    background: rgb(255, 255, 255);
+    border: 1px solid #00000033;
+    box-shadow: 45px 45px 45px  rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .card img {
+    width: 98px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .card:hover {
+    transform: rotate(-5deg) scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid #00000033;
+  }
+  
+  .card__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #c7c7c7;
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .card:hover .card__content {
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity: 1;
+  }
+  
+  .card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
+  }
+  
+  .card:hover img {
+    scale: 0;
+    transform: rotate(-45deg);
+  } 

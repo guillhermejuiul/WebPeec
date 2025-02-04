@@ -10,8 +10,9 @@
   }
   
   /* The button (formerly the input) */
+  
   .slider {
-    --background: #28096b;
+    --background: #522ba7;
     position: relative;
     cursor: pointer;
     width: 100%;
@@ -32,18 +33,19 @@
     border-radius: 50%;
     left: 10%;
     bottom: 15%;
-    box-shadow: inset 8px -4px 0px 0px #fff000;
+    box-shadow: inset 8px -4px 8px 8px #fff000;
     background: var(--background);
     transition: .5s;
   }
   
   /* Styles when button is active */
   .slider.active {
-    background-color: #522ba7;
+    background-color: #28096b;
   }
   
   .slider.active::before {
     transform: translateX(100%);
-    box-shadow: inset 15px -4px 0px 15px #fff000;
+    box-shadow: inset 8px -4px 0px 0px #fff000;
+    left: 20%;
   }
   

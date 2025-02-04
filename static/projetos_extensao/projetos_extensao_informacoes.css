@@ -5,7 +5,7 @@
 	margin-right: 450px;
     border-radius: 30px;
     border: 1px solid #00000072;
-    box-shadow: 0 4px 8px rgba(255, 252, 252, 0.1);
+    box-shadow: 45px 45px 45px  rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,7 +19,7 @@
 	margin-right: 450px;
     border-radius: 30px;
     border: 1px solid #00000072;
-    box-shadow: 0 4px 8px rgba(255, 252, 252, 0.1);
+    box-shadow: 45px 45px 45px  rgba(0, 0, 0, 0.25);
     position: relative;
     display: flex;
     flex-wrap: wrap;
